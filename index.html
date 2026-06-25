@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kashaf Amjad — Portfolio</title>
+
+  <!-- Elegant font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#hero">Kas<span class="accent">haf</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#education">Education</a></li>
+        <li role="none"><a role="menuitem" href="#certifications">Certifications</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card glass">
+          <div class="hero-meta">
+            <div class="avatar" aria-hidden="true">
+              <!-- SVG placeholder avatar -->
+              <svg viewBox="0 0 120 120" class="avatar-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile placeholder">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#dff6f0"/>
+                    <stop offset="1" stop-color="#e8f1fb"/>
+                  </linearGradient>
+                </defs>
+                <rect rx="20" width="120" height="120" fill="url(#g1)"/>
+                <g transform="translate(20,18)" fill="#c6dff0">
+                  <circle cx="40" cy="28" r="18"/>
+                  <rect x="6" y="62" rx="10" width="68" height="18"/>
+                </g>
+              </svg>
+            </div>
+
+            <div class="hero-text">
+              <h1 class="display">Kashaf Amjad</h1>
+              <p class="subtle">Computer Science Student • Java Developer • Aspiring Software Engineer</p>
+              <p class="lead">I am a Computer Science student at COMSATS University Islamabad, Vehari Campus with a passion for Java programming, web development, and problem solving. I enjoy building practical projects and continuously improving my technical skills.</p>
+
+              <div class="hero-actions">
+                <a class="btn primary" href="#projects">View Projects</a>
+                <a class="btn primary" href="#contact">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Programming Languages</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="intro-panel glass">
+  <h3>Quick Intro</h3>
+
+  <p>
+    Computer Science student at COMSATS University Islamabad,
+     with a strong interest in Java programming,
+    web development, and data structures & algorithms.
+    Currently seeking internship opportunities to gain practical
+    software engineering experience.
+  </p>
+
+  <div class="contact-mini">
+    <a href="mailto:kashafamjade007@gmail.com" class="mini-link">
+      📧 kashafamjade007@gmail.com
+    </a>
+
+    <a href="https://www.linkedin.com/in/kashaf-amjad-3272a5374"
+       target="_blank"
+       class="mini-link">
+      💼 LinkedIn
+    </a>
+
+    <a href="https://github.com/kashafx007"
+       target="_blank"
+       class="mini-link">
+      💻 GitHub
+    </a>
+  </div>
+</aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p class="section-sub">Learning through projects, curiosity, and continuous improvement.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass">
+          <h3>Beyond the Classroom</h3>
+          <p>I enjoy transforming ideas into practical projects and exploring technology outside the classroom. Every challenge is a chance to sharpen my skills and become a better developer.</p>
+          <ul class="about-list">
+            <li><strong>Focus:</strong> Java Development, Web Development & Problem Solving</li>
+            <li><strong>Tools:</strong> Android Studio, Java, HTML, CSS, VS Code, Git</li>
+            <li><strong>Learning Style:</strong> Self Learning & Hands on Projects</li>
+          </ul>
+        </div>
+
+        <div class="about-card glass">
+          <h3>My Approach</h3>
+          <p>I believe steady progress beats shortcuts. I learn by building, experimenting, and improving with every project, aiming to create software that is simple, reliable, and useful.</p>
+          <div class="skill-pill-row">
+            <span class="pill">Team Collaboration</span>
+            <span class="pill">Continuous Learning</span>
+            <span class="pill">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="section-sub">Core technologies and programming skills I use to build projects and keep learning.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill card with progress -->
+          <div class="skill-card glass">
+            <h4>Java</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:85%"><span>85%</span></div>
+            </div>
+            <p class="skill-desc">Strong OOP concepts and Android development.</p>
+          </div>
+
+          <div class="skill-card glass">
+            <h4>C++</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:80%"><span>80%</span></div>
+            </div>
+            <p class="skill-desc">Data structures and algorithm implementation.</p>
+          </div>
+
+          <div class="skill-card glass">
+            <h4>Python</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:82%"><span>82%</span></div>
+            </div>
+            <p class="skill-desc">Python fundamentals and basic scripting.</p>
+          </div>
+
+          <div class="skill-card glass">
+            <h4>HTML & CSS</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:80%"><span>80%</span></div>
+            </div>
+            <p class="skill-desc">Responsive and user friendly web design.</p>
+          </div>
+
+          <div class="skill-card glass">
+            <h4>Data Structures</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:75%"><span>75%</span></div>
+            </div>
+            <p class="skill-desc">Arrays, stacks, queues, trees, sorting, and searching.</p>
+          </div>
+
+          <div class="skill-card glass">
+            <h4>Problem Solving</h4>
+            <div class="progress">
+              <div class="progress-bar" style="--pct:80%"><span>80%</span></div>
+            </div>
+            <p class="skill-desc">Logical thinking and debugging skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2>Selected Projects</h2>
+        <p class="section-sub">Projects that reflect my learning journey, technical skills, and hands on experience.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project card -->
+        <article class="project-card glass" data-project="calc">
+        
+
+          <div class="project-body">
+            <h3>Android Calculator App</h3>
+            <p class="muted">Android Calculator App developed in Android Studio using Java. Supports basic arithmetic operations with a clean, responsive, and user-friendly interface. Designed to provide accurate calculations and smooth user interaction.Built with a focus on simplicity, accuracy, and ease of use.</p>
+            <div class="project-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">UI</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn primary" data-open="calc">Preview</button>
+              <a class="btn primary" href="https://github.com/kashafx007/Calculator-App" target="_blank" aria-label="View repository">Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass" data-project="passman">
+          
+
+          <div class="project-body">
+            <h3>Password Management System</h3>
+            <p class="muted">Secure Password Management System developed using Python. Features user registration, login authentication, password storage, search, update, and delete functionality through an easy-to-use interface. Built with a focus on security and efficient password management.</p>
+            <div class="project-tags">
+              <span class="tag">Security</span>
+              <span class="tag">Encryption</span>
+              <span class="tag">Python</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn primary" data-open="passman">Preview</button>
+              <a class="btn primary" href="https://github.com/kashafx007/Password-Management-System" target="_blank" aria-label="View repository">Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass" data-project="portfolio">
+          
+
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p class="muted">Responsive personal portfolio website built using HTML, CSS, and JavaScript. Showcases my skills, projects, education, and achievements through a modern and professional user interface. Designed with a clean layout and responsive design to provide a smooth experience across different devices.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn primary" data-open="portfolio">Preview</button>
+              <a class="btn primary" href="#" aria-label="View repository">Repository</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p class="section-sub">My academic journey and the core subjects that have shaped my technical foundation.</p>
+        </div>
+
+        <div class="timeline glass">
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="year">2024 — Present</span>
+              <span class="place">COMSATS University Islamabad, Vehari Campus</span>
+            </div>
+            <div class="timeline-body">
+              <h4>Bachelor of Science in Computer Science (BSCS)</h4>
+              <p>Currently pursuing a Bachelor of Science in Computer Science with coursework in Object-Oriented Programming (OOP), Data Structures, Database Systems, Information Security, Web Development, and Software Engineering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section container">
+      <div class="section-head">
+        <h2>Certifications</h2>
+        <p class="section-sub">Certificates that reflect my commitment to continuous learning and skill development.</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card glass">
+          <h4>Freelancing Certificate</h4>
+          <p class="muted">Successfully completed the DigiSkills.pk Freelancing course, gaining practical knowledge of online marketplaces, client communication, proposal writing, and building a professional freelance career.</p>
+          <a href="assets/digiskills.jpg" target="_blank">View certificate</a>
+        </div>
+
+        <div class="cert-card glass">
+          <h4>Currently Learning</h4>
+          <p class="muted">Continuously improving my skills through hands on projects, online courses, and self learning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="section-sub">Open to internship opportunities, learning experiences, and collaboration. Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form glass"action="https://formsubmit.co/kashafamjad007@gmail.com"method="POST">
+          <input type="hidden" name="_subject" value="New Portfolio Message">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+              <button class="btn primary" type="reset">Reset</button>
+            </div>
+            <p class="form-note muted">For professional inquiries, please contact me directly via email or LinkedIn.</p>
+          </form>
+
+          <aside class="contact-info glass">
+            <h3>Get in touch</h3>
+            <p class="muted">Open to internships, collaborations, and networking opportunities.</p>
+
+            <div class="contact-list">
+              <div><strong>Email</strong><br><a href="mailto:kashafamjad007@gmail.com">kashafamjad007@gmail.com</a></div>
+              <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/kashaf-amjad-3272a5374">https://www.linkedin.com/in/kashaf-amjad-3272a5374</a></div>
+              <div><strong>GitHub</strong><br><a href="https://github.com/kashafx007">https://github.com/kashafx007</a></div>
+            </div>
+            <br>
+
+            <div class="small-note muted">Seeking software development internship opportunities.</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#hero">Kas<span class="accent">haf</span></a>
+        <p class="muted">Computer Science Student • Aspiring Software Developer • Lifelong Learner</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kashaf-amjad-3272a5374" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/kashafx007" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <small class="muted">© 2026 Kashaf Amjad. All rights reserved.</small>
+      <a class="muted" href="javascript:alert('This portfolio only uses information submitted through the contact form for communication purposes.');">Privacy</a>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Project Modal (reused for previews) -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel glass" role="document">
+      <button class="modal-close" aria-label="Close preview">✕</button>
+      <div class="modal-content">
+        <h3 id="modalTitle">Project Preview</h3>
+        <p id="modalDesc" class="muted">Project details and media will appear here.</p>
+        <div id="modalMedia" class="modal-media" ></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("cNQCmBH_uVwdWyGrW");
+</script>
+</body>
+</html>
