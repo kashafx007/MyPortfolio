@@ -166,3 +166,92 @@ document.body.addEventListener('keydown', (e) => {
 document.body.addEventListener('mousedown', () => {
   document.documentElement.classList.remove('show-focus');
 });
+const progressBar = document.getElementById("progressBar");
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress = (scrollTop / scrollHeight) * 100;
+
+    progressBar.style.width = progress + "%";
+
+});
+/* Active Navigation */
+
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 150;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+/* Typing Animation */
+
+const typingText = 
+"Computer Science Student • Java Developer • Aspiring Software Engineer";
+
+const typingElement = document.getElementById("typing");
+
+let index = 0;
+
+function typeEffect(){
+
+  if(index < typingText.length){
+
+    typingElement.textContent += typingText.charAt(index);
+    index++;
+
+    setTimeout(typeEffect, 60);
+
+  }
+
+}
+
+typeEffect();
+/* Animated Skill Bars */
+
+const skillBars = document.querySelectorAll(".progress-bar");
+
+const skillObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+
+      const bar = entry.target;
+
+      bar.style.width = bar.style.getPropertyValue("--pct");
+
+      skillObserver.unobserve(bar);
+
+    }
+
+  });
+
+}, {threshold:0.5});
+
+
+skillBars.forEach(bar => {
+  skillObserver.observe(bar);
+});
